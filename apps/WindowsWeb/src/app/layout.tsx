@@ -48,8 +48,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: 'website',
 		url: 'http://localhost:3000',
-		title: 'Windows 11 Web',
-		siteName: 'Windows 11 Web',
+		title: 'Antonio Cruz Portfolio',
+		siteName: 'Antonio Cruz Portfolio',
 		description: `Discover the elegance of Windows 11 in your browser! Powered by Next.js and Chakra UI, this open source project replicates the stylish design and smooth user interface of the real Windows 11. Explore familiar features and play around with the settings - all in your browser.`,
 	},
 	verification: {
