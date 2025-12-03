@@ -4,12 +4,12 @@ import {
 	EdgeApp,
 	GithubApp,
 	SpotifyApp,
-	VSCodeApp,
+	CVApp,
 } from '@/components/Apps/apps';
 
 export const defaultDesktopApps: App[] = [
 	EdgeApp,
-	VSCodeApp,
+	CVApp,
 	SpotifyApp,
 	GithubApp,
 ];
