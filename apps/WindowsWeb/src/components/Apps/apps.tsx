@@ -6,6 +6,7 @@ import { Github } from '@/components/Apps/Github';
 import { Settings } from '@/components/Apps/Settings';
 import { Spotify } from '@/components/Apps/Spotify';
 import { VSCode } from '@/components/Apps/VSCode';
+import { CV } from '@/components/Apps/CV';
 import CalculatorIcon from '@/public/icons/Calculator.png';
 import ChatIcon from '@/public/icons/Chat.png';
 import EdgeIcon from '@/public/icons/Edge.png';
@@ -23,6 +24,7 @@ import StoreIconLight from '@/public/icons/Store_Light.png';
 import TasksIconDark from '@/public/icons/TaskView_Dark.png';
 import TasksIconLight from '@/public/icons/TaskView_Light.png';
 import VSCodeIcon from '@/public/icons/VSCode.svg';
+import CVIcon from '@/public/icons/CV.png';
 import WhiteboardIcon from '@/public/icons/Whiteboard.svg';
 import WordIcon from '@/public/icons/Word.svg';
 import XboxIcon from '@/public/icons/Xbox.svg';
@@ -141,7 +143,7 @@ export const XboxApp: App = {
 	shortName: 'Xbox',
 	fullName: 'Xbox',
 	processName: 'xbox',
-	icon: <Image alt="xbox" src={XboxIcon } />,
+	icon: <Image alt="xbox" src={XboxIcon} />,
 	Window: null,
 };
 
@@ -150,7 +152,7 @@ export const SolitaireApp: App = {
 	fullName: 'Solitaire',
 	processName: 'solitaire',
 	icon: (
-		<Image alt="solitaire" src={SolitaireIcon } />
+		<Image alt="solitaire" src={SolitaireIcon} />
 	),
 	Window: null,
 };
@@ -163,7 +165,7 @@ export const SpotifyApp: App = {
 		<Image
 			alt="spotify"
 			quality={100}
-			src={SpotifyIcon }
+			src={SpotifyIcon}
 		/>
 	),
 	Window: Spotify,
@@ -174,7 +176,7 @@ export const InstagramApp: App = {
 	fullName: 'Instagram',
 	processName: 'instagram',
 	icon: (
-		<Image alt="instagram" src={InstagramIcon } />
+		<Image alt="instagram" src={InstagramIcon} />
 	),
 	Window: null,
 };
@@ -195,7 +197,7 @@ export const VSCodeApp: App = {
 		<Image
 			alt="vscode"
 			quality={100}
-			src={VSCodeIcon }
+			src={VSCodeIcon}
 		/>
 	),
 	Window: VSCode,
@@ -205,12 +207,25 @@ export const VSCodeApp: App = {
 	},
 };
 
+export const CVApp: App = {
+	shortName: 'CV',
+	fullName: 'My CV',
+	processName: 'CV',
+	icon: (
+		<Image
+			alt="CV"
+			quality={100}
+			src={CVIcon} />
+	),
+	Window: CV,
+}
+
 export const WhiteboardApp: App = {
 	shortName: 'Whiteboard',
 	fullName: 'Whiteboard',
 	processName: 'whiteboard',
 	icon: (
-		<Image alt="whiteboard" src={WhiteboardIcon } />
+		<Image alt="whiteboard" src={WhiteboardIcon} />
 	),
 	Window: null,
 };
@@ -219,7 +234,7 @@ export const WordApp: App = {
 	shortName: 'Word',
 	fullName: 'Word',
 	processName: 'word',
-	icon: <Image alt="word" src={WordIcon } />,
+	icon: <Image alt="word" src={WordIcon} />,
 	Window: null,
 };
 
@@ -231,7 +246,7 @@ export const GithubApp: App = {
 		<Image
 			alt="github"
 			quality={100}
-			src={GithubIcon }
+			src={GithubIcon}
 		/>
 	),
 	Window: Github,
@@ -244,6 +259,7 @@ export const apps = {
 	mail: MailApp,
 	store: StoreApp,
 	photos: PhotosApp,
+	CV: CVApp,
 	vscode: VSCodeApp,
 	settings: SettingsApp,
 	xbox: XboxApp,
@@ -256,6 +272,7 @@ export const apps = {
 	word: WordApp,
 	tasks: TasksApp,
 	calculator: CalculatorApp,
+
 };
 
 export type Process = keyof typeof apps;
