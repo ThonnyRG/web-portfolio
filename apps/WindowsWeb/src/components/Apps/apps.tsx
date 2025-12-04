@@ -5,7 +5,6 @@ import { Edge } from '@/components/Apps/Edge';
 import { Github } from '@/components/Apps/Github';
 import { Settings } from '@/components/Apps/Settings';
 import { Spotify } from '@/components/Apps/Spotify';
-import { VSCode } from '@/components/Apps/VSCode';
 import { CV } from '@/components/Apps/CV';
 import CalculatorIcon from '@/public/icons/Calculator.png';
 import ChatIcon from '@/public/icons/Chat.png';
@@ -23,7 +22,6 @@ import StoreDarkIcon from '@/public/icons/Store_Dark.png';
 import StoreIconLight from '@/public/icons/Store_Light.png';
 import TasksIconDark from '@/public/icons/TaskView_Dark.png';
 import TasksIconLight from '@/public/icons/TaskView_Light.png';
-import VSCodeIcon from '@/public/icons/VSCode.svg';
 import CVIcon from '@/public/icons/CV.png';
 import WhiteboardIcon from '@/public/icons/Whiteboard.svg';
 import WordIcon from '@/public/icons/Word.svg';
@@ -189,24 +187,6 @@ export const CalculatorApp: App = {
 	Window: null,
 };
 
-export const VSCodeApp: App = {
-	shortName: 'VSCode',
-	fullName: 'Visual Studio Code',
-	processName: 'vscode',
-	icon: (
-		<Image
-			alt="vscode"
-			quality={100}
-			src={VSCodeIcon}
-		/>
-	),
-	Window: VSCode,
-	initialSize: {
-		width: 1024,
-		height: 768,
-	},
-};
-
 export const CVApp: App = {
 	shortName: 'CV',
 	fullName: 'My CV',
@@ -260,7 +240,6 @@ export const apps = {
 	store: StoreApp,
 	photos: PhotosApp,
 	CV: CVApp,
-	vscode: VSCodeApp,
 	settings: SettingsApp,
 	xbox: XboxApp,
 	solitaire: SolitaireApp,
