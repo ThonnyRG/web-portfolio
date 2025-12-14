@@ -6,6 +6,7 @@ import { Github } from '@/components/Apps/Github';
 import { Settings } from '@/components/Apps/Settings';
 import { Spotify } from '@/components/Apps/Spotify';
 import { CV } from '@/components/Apps/CV';
+import { LinkedIn } from '@/components/Apps/LinkedIn';
 import CalculatorIcon from '@/public/icons/Calculator.png';
 import ChatIcon from '@/public/icons/Chat.png';
 import EdgeIcon from '@/public/icons/Edge.png';
@@ -26,6 +27,7 @@ import CVIcon from '@/public/icons/CV.png';
 import WhiteboardIcon from '@/public/icons/Whiteboard.svg';
 import WordIcon from '@/public/icons/Word.svg';
 import XboxIcon from '@/public/icons/Xbox.svg';
+import LinkedInIcon from '@/public/icons/LinkedIn.png';
 
 export const TasksApp: App = {
 	shortName: 'Tasks',
@@ -176,7 +178,17 @@ export const InstagramApp: App = {
 	icon: (
 		<Image alt="instagram" src={InstagramIcon} />
 	),
-	Window: null,
+	Window: LinkedIn,
+};
+
+export const LinkedInApp: App = {
+	shortName: 'LinkedIn',
+	fullName: 'LinkedIn',
+	processName: 'linkedin',
+	icon: (
+		<Image alt="linkedin" src={LinkedInIcon} />
+	),
+	Window: LinkedIn,
 };
 
 export const CalculatorApp: App = {
@@ -251,7 +263,7 @@ export const apps = {
 	word: WordApp,
 	tasks: TasksApp,
 	calculator: CalculatorApp,
-
+	linkedin: LinkedInApp,
 };
 
 export type Process = keyof typeof apps;
