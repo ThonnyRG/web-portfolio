@@ -5,6 +5,7 @@ import {
 	GithubApp,
 	SpotifyApp,
 	CVApp,
+	LinkedInApp,
 } from '@/components/Apps/apps';
 
 export const defaultDesktopApps: App[] = [
@@ -12,4 +13,5 @@ export const defaultDesktopApps: App[] = [
 	CVApp,
 	SpotifyApp,
 	GithubApp,
+	LinkedInApp,
 ];
